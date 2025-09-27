@@ -50,7 +50,7 @@ start = (x,y)
 hole = (x,y)
 and a green polygon
 
-Green polygon, we apply a \log(d+1)+1 scale where d is the distance from the hole for "how difficult"
+Green polygon, we apply a log(d+1)+1 scale where d is the distance from the hole for "how difficult"
 
 Filter data for only state that have some fairway
 Markov chain has 2 states for each fairway state (1 standard state and 1 feeder state for drops)
