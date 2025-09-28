@@ -1,38 +1,7 @@
 import pandas as pd
-
-data = pd.read_csv("hole_12_data/Fairway 1.csv")
-
-lon = data["0"]
-lat = data["1"]
-alt = data["2"]
-
 import numpy as np
-import matplotlib.pyplot as plt
-from scipy.interpolate import griddata
 
-# Your data
-# lon, lat, alt = arrays of raw points
-points = np.column_stack((lon, lat))
-values = alt
-
-# Define a regular grid
-grid_lon = np.linspace(lon.min(), lon.max(), 50)
-grid_lat = np.linspace(lat.min(), lat.max(), 50)
-grid_X, grid_Y = np.meshgrid(grid_lon, grid_lat)
-
-# Interpolate alt values onto grid
-grid_Z = griddata(points, values, (grid_X, grid_Y), method="cubic")
-
-# Plot contour
-plt.figure(figsize=(8,6))
-plt.contourf(grid_lon, grid_lat, grid_Z, cmap="terrain")
-plt.colorbar(label="Elevation (m)")
-plt.xlabel("Longitude")
-plt.ylabel("Latitude")
-plt.title("Interpolated Terrain Map")
-plt.show()
-
-
+data = pd.read_csv("hole_12_data/hole_12_markov_states.csv")
 
 def simulate_shot(x,y,club,theta, count):
     pass
@@ -41,7 +10,7 @@ def simulate_shot(x,y,club,theta, count):
 
 """
 Data in form
-X_1|X_2|Y_1|Y_2|Z|fairway|drop
+X|Y|Z|fairway|green
 ...
 
 With 2 extra points
@@ -57,6 +26,16 @@ Markov chain has 2 states for each fairway state (1 standard state and 1 feeder 
 Need to decide how to deal with the green (absorbing state)
 """
 
+# teebox = (34°04'48"N 84°13'40"W)
+# flag = (34°04'47"N 84°13'26"W)
 
-def optimize_chain(state_info):
-    pass
+
+def optimize_chain(state_df, flag):
+    state_df["flag distance"] = np.sqrt((state_df['x'] - flag[0])**2 + (state_df['y'] - flag[1])**2)
+    state_df["green_rate"] = np.where(state_df["green"] > 0, np.log(state_df["flag distance"] + 1) + 1, 0) + np.where((state_df["green"] <= 0) & (state_df["flag distance"] <= 60), np.log(state_df["flag distance"] + 1) + 1, 0)
+
+    len(state_df["green_rate"] == 0)
+
+    markov_chain = np.zeros(shape=(len(state_df) + len(state_df["green_rate"] == 0)))
+
+    

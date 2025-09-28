@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Untitled map</name>
+	<gx:CascadingStyle kml:id="__managed_style_54EFD502F03ABE6306E4">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_4E5595DA7E3ABE6306E4">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_31AC115C863ABE6306E4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_4E5595DA7E3ABE6306E4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_54EFD502F03ABE6306E4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="033A0F46213ABE6306DC">
+		<name>Fairway 1</name>
+		<LookAt>
+			<longitude>-84.22668277997887</longitude>
+			<latitude>34.0802786367016</latitude>
+			<altitude>340.2677165576993</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>681.5407858139225</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_31AC115C863ABE6306E4</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-84.22796057907458,34.07984993031263,0 -84.22582862816508,34.07965193243626,0 -84.22589001968883,34.08045250928067,0 -84.22670770184111,34.08029673312878,0 -84.22732320612313,34.08028558905008,0 -84.22788983485788,34.08016166307848,0 -84.22796057907458,34.07984993031263,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="06804F0B133ABE65497C">
+		<name>Fairway 2</name>
+		<LookAt>
+			<longitude>-84.22485418290749</longitude>
+			<latitude>34.08021425899808</latitude>
+			<altitude>316.6140042533581</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>295.5786864976835</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_31AC115C863ABE6306E4</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-84.22568835557044,34.08019846396316,0 -84.22538956395167,34.07986188676076,0 -84.22516466114261,34.07980478706882,0 -84.22451515851319,34.0799106252537,0 -84.22410203550481,34.07976024601788,0 -84.22383709903494,34.07969299023992,0 -84.22354857456803,34.08017410744361,0 -84.22358218317116,34.08027820971652,0 -84.22421006564197,34.08028821634355,0 -84.22438720801232,34.08027083319547,0 -84.22455207678182,34.08038933804541,0 -84.22489958876236,34.08039085999898,0 -84.22529846253289,34.08045565017017,0 -84.22576748430272,34.08043828160728,0 -84.22568835557044,34.08019846396316,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="08BF2E75D63ABE65E060">
+		<name>Green</name>
+		<LookAt>
+			<longitude>-84.2241924352992</longitude>
+			<latitude>34.07994234718391</latitude>
+			<altitude>315.7670507672843</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>94.03845649919278</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_31AC115C863ABE6306E4</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-84.22431647085848,34.07992480727116,0 -84.22421503989459,34.07987307416803,0 -84.22416834257709,34.07980578022983,0 -84.22408714623091,34.07976295079248,0 -84.22404127031547,34.07976606534773,0 -84.22399846222977,34.07981642461727,0 -84.22398966756471,34.07985868492111,0 -84.22403100749827,34.07990316877312,0 -84.22419770841947,34.07998415024962,0 -84.22425638969494,34.08000466551515,0 -84.22430551481403,34.0799979180119,0 -84.2243290515422,34.07997610550297,0 -84.2243353428792,34.07995299362116,0 -84.22431647085848,34.07992480727116,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
